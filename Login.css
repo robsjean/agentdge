@@ -1,0 +1,46 @@
+/* src/components/Login.css */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 24px); /* Réduction de la largeur avec le padding */
+  padding: 8px; /* Réduction du padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Réduction de la taille de la police */
+}
+
+button.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+}

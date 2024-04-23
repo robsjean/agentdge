@@ -1,0 +1,153 @@
+/* WelcomePage.css */
+
+/* Styles de base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Styles pour la barre latérale */
+.sidebar {
+  background-color: #f4f4f4;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-content {
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidebar li:last-child {
+  border-bottom: none;
+}
+
+.sidebar li:hover {
+  background-color: #ddd;
+}
+
+.sidebar button {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  color: #000;
+}
+
+/* Styles pour la barre de navigation */
+.appbar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.app-title {
+  margin: 0;
+}
+
+/* Styles pour l'icône de menu */
+.menu-icon {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.menu-line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Animation pour changer la couleur au survol */
+.menu-line:hover {
+  background-color: #ddd;
+}
+
+/* Styles pour le contenu principal */
+.content {
+  margin-left: 0;
+}
+
+.content-menu-open {
+  margin-left: 250px;
+}
+
+/* Styles pour les boîtes de fonctionnalités */
+.functionality-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.functionality-box {
+  width: 400px;
+  height: 150px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.functionality-box:hover {
+  transform: translateY(-5px);
+}
+
+.functionality-box h2 {
+  margin-bottom: 10px;
+}
+
+.functionality-box p {
+  font-size: 14px;
+}
+
+/* Styles pour la barre de navigation */
+.appbar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Centrage du texte */
+}
+
+.app-title {
+  margin: -10;
+  font-size: 24px; /* Taille de police plus grande */
+}
+

@@ -1,0 +1,51 @@
+.parrainage-management-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.periods-list {
+  margin-top: 20px;
+}
+
+.period-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.period-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.period-details {
+  display: flex;
+  align-items: center;
+}
+
+.period-name {
+  flex: 1;
+  font-weight: bold;
+  color: #212529;
+}
+
+.delete-period-button {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-period-button:hover {
+  background-color: #bd2130;
+}
